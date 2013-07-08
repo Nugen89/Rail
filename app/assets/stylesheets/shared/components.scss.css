@@ -1,0 +1,77 @@
+
+
+
+
+
+
+option {
+		color: #333;
+  }
+
+option[value="Eastern Suburbs & Illawarra Line"] {
+		background: #0072c6;
+  }
+
+option[value="Bankstown Line"] {
+		background: #fe7800;
+  }
+
+option[value="Inner West Line"] {
+		background: #8d80b8;
+  }
+
+option[value="Airport & East Hills Line"] {
+		background: #339e35;
+  }
+
+option[value="South Line"] {
+		background: #90cef2;
+  }
+
+option[value="Cumberland Line"] {
+		background: #cc00a0;
+  }
+
+option[value="North Shore Line"] {
+		background: #fcb514;
+  }
+
+option[value="Western Line"] {
+		background: #fcb514;
+  }
+
+option[value="Carlingford Line"] {
+		background: #002b7f;
+  }
+
+option[value="Olympic Park Line"] {
+		background: #7e8083;
+  }
+
+option[value="Northern Line"] {
+		background: #ce1126;
+  }
+
+option[value="South coast Line"] {
+		background: #c5c5c5;
+  }
+
+option[value="Southern Highlands Line"] {
+		background: #c5c5c5;
+  }
+
+option[value="Blue Mountains Line"] {
+		background: #c5c5c5;
+  }
+
+option[value="Newcastle & Central Coast Line"] {
+		background: #c5c5c5;
+  }
+
+option[value="Hunter Line"] {
+		background: #6d28aa;
+  }
+
+select#feedback_line option{
+	color: #FFFFFF;
+}
