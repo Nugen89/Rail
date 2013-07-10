@@ -51,6 +51,6 @@ class Feedback < ActiveRecord::Base
 												'Other'
 											]
 
-  # validates_presence_of :title, :description, :rating
+  validates_presence_of :comment, :line, :station
 
 end

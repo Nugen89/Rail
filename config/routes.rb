@@ -6,6 +6,7 @@ CityFail::Application.routes.draw do
   root 'application#index'
 
   get 'about' => 'application#about'
+  get 'complaints' => 'application#complaints'
 
   resources :feedbacks
 

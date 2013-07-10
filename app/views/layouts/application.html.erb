@@ -8,26 +8,33 @@
 </head>
 <body>
 
-<header class="">
-	<nav class="">
-		<ul class="menu">
-			<li><div id="logo"><a href="">CityRail Fail</a></div></li>
-			<li class="current"><a href="">Home</a></li>
-			<li><a href="">Complaints</a></li>
-			<li><%= link_to "About", about_path %></li>
-		</ul>
-	</nav>
-</header>
+	<header class="">
+		<nav class="">
+			<ul class="menu">
+				<li><div id="logo"><%= link_to "CityFail", root_path %></div></li>
+				<li class="current"><%= link_to "Home", root_path %> </li>
+				<li><%= link_to "Complaints", complaints_path %> </li>
+				<li><%= link_to "About", about_path %></li>
+			</ul>
+		</nav>
+	</header>
 
-<%= yield %>
+	<%= yield %>
 
+	<footer class="grid flex small">
+	CityRail Fail is not affiliated with Sydney Trains. CityRail Fail endeavours to provide the commuters with 
+	We will forward your feedback to Sydney Trains as requested.
+	</footer>
 
-
-<footer class="grid flex small">
-CityRail Fail is not affiliated with Sydney Trains. CityRail Fail endeavours to provide the commuters with 
-We will forward your feedback to Sydney Trains as requested.
-</footer>
-
-
+	<% if Rails.env.development? %>
+		<br/><br/>
+		<div class="container content well debug">
+			<%= debug(params) if Rails.env.development? %>
+			 <!-- debug(current_cart) %> -->
+			 <!-- debug(current_user) %> -->
+			 <!-- debug(user_session) %> -->
+		</div>
+	<% end %>
+	
 </body>
 </html>

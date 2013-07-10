@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
     
   end
 
+  def complaints
+    
+  end
+
   def debug(*args)
     args.each do |arg|
       logger.debug arg
