@@ -46,6 +46,9 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.10)
+    autoscaler (0.4.1)
+      heroku-api
+      sidekiq (~> 2.7)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -102,6 +105,8 @@ GEM
       activesupport (>= 3.1, < 4.1)
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
+    heroku-api (0.3.8)
+      excon (~> 0.16.10)
     hike (1.2.3)
     i18n (0.6.4)
     jbuilder (1.4.2)
@@ -235,6 +240,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-nulldb-adapter!
+  autoscaler
   better_errors (>= 0.3.2)
   bourbon
   coffee-rails (~> 4.0.0)
