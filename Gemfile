@@ -6,6 +6,7 @@ gem 'sidekiq'
 gem 'sidekiq-status'
 gem 'sinatra', require: false
 gem 'slim', '>= 1.1.0'
+gem 'autoscaler'
 
 gem "mandrill-api", "~> 1.0.37"
 
