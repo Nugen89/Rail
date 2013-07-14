@@ -9,7 +9,7 @@ gem 'slim', '>= 1.1.0'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 
 # Use SCSS for stylesheets
 group :assets do
@@ -67,10 +67,13 @@ gem "better_errors", ">= 0.3.2", :group => :development
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+gem 'rails_12factor', group: :production
