@@ -1,5 +1,7 @@
 class Feedback < ActiveRecord::Base
 
+	include EmailManager
+
 	TYPES = [
 					 'Complaint',
 					 'Suggestion',
@@ -21,7 +23,7 @@ class Feedback < ActiveRecord::Base
 							Adamstown
 							Airport\ -\ Domestic\
 							Airport\ -\ International\
-							Albion Park
+							Albion\ Park\
 							Allawah
 							Arncliffe
 							Artarmon
