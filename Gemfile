@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'sidekiq'
+gem 'sidekiq-status'
+gem 'sinatra', require: false
+gem 'slim', '>= 1.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
