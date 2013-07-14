@@ -77,3 +77,5 @@ gem 'unicorn'
 
 
 gem 'rails_12factor', group: :production
+
+# RAILS_ENV=production bundle exec rake assets:precompile
