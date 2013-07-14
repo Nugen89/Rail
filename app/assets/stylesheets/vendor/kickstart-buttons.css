@@ -239,7 +239,7 @@ input[type=reset].blue,
 input[type=button].blue{
 text-shadow:0 -1px 0 #1D6DC1;
 color:#fff;
-border:1px solid #1D6DC1;
+/*border:1px solid #1D6DC1;*/
 background: rgb(122,188,255); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
@@ -367,3 +367,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e53c16', end
 	background: linear-gradient(top, rgba(238,106,76,1) 0%,rgba(251,33,33,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee6a4c', endColorstr='#fb2121',GradientType=0 ); /* IE6-9 */
 	}
+
+
+
+
+
+	button, 
+  a.btn, 
+  a.btn:visited, 
+  a.button, 
+  a.button:visited, 
+  input[type="submit"], 
+  input[type="reset"], 
+  input[type="button"] {
+    color: #333333;
+    font-weight: 700;
+  }

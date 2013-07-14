@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def complaints
-    
+    @feedbacks = Feedback.all
   end
 
   def debug(*args)

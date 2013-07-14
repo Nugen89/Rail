@@ -1,6 +1,7 @@
 CityFail::Application.routes.draw do
   require 'sidekiq/web'
-  
+  # https://github.com/mperham/sidekiq/wiki/Monitoring
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
