@@ -1,5 +1,11 @@
-%h3 About
+%div.grid.flex
 
-= Feedback.all
-= @feedback.inspect
-- @feedback.send_template
+  %h4 About
+
+  %p It is important to send your feedback and complaints to City Rail to allow management and the government to gain an accurate understanding of the current level of service provided.
+
+  %p Your feedback will be invaluable in identifying and addressing any shortcomings that exist in the level of service provided to commuters.
+
+  %p CityRailFail provides commuters with a quick and easy way to send suggestions and feedback allowing CityRail to address these.
+
+  = link_to "Send feedback now", root_path

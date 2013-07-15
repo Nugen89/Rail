@@ -23,4 +23,8 @@ en:
   hello: "Hello world"
   date:
     formats:
-      default: "%d/%m/%Y"
+      default: "%d/%m/%Y %H:%M:%S"
+  time:
+    formats:
+      short_datetime: "%B %d, %Y"
+      long_datetime:  "%B %d, %Y, at %r"

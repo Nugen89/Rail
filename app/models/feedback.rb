@@ -3,20 +3,20 @@ class Feedback < ActiveRecord::Base
 	include EmailManager
 
 	TYPES = [
-					 'Complaint',
-					 'Suggestion',
-					 'Feedback',
-					 'Compliment'
-					]
+			 'Complaint',
+			 'Suggestion',
+			 'Feedback',
+			 'Compliment'
+			]
 
 	TOPICS = [
-						'Train service',
-						'Train timetable',
-						'Tickets & Fares',
-						'Trackwork',
-						'Cleanliness',
-						'Passenger Information'
-						]
+			'Train service',
+			'Train timetable',
+			'Tickets & Fares',
+			'Trackwork',
+			'Cleanliness',
+			'Passenger Information'
+			]
 
 	STATIONS = %w[
 							Aberdeen
@@ -348,33 +348,37 @@ class Feedback < ActiveRecord::Base
 						]
 
 	LINES = [
-						'Eastern Suburbs & Illawarra Line',
-						'Bankstown Line',
-						'Inner West Line',
-						'Airport & East Hills Line',
-						'South Line',
-						'Cumberland Line',
-						'North Shore Line',
-						'Western Line',
-						'Carlingford Line',
-						'Olympic Park Line',
-						'Northern Line',
-						'South coast Line',
-						'Southern Highlands Line',
-						'Blue Mountains Line',
-						'Newcastle & Central Coast Line',
-						'Hunter Line'
-					]
+			'Eastern Suburbs & Illawarra Line',
+			'Bankstown Line',
+			'Inner West Line',
+			'Airport & East Hills Line',
+			'South Line',
+			'Cumberland Line',
+			'North Shore Line',
+			'Western Line',
+			'Carlingford Line',
+			'Olympic Park Line',
+			'Northern Line',
+			'South coast Line',
+			'Southern Highlands Line',
+			'Blue Mountains Line',
+			'Newcastle & Central Coast Line',
+			'Hunter Line'
+			]
 
 	COMMON_COMPLAINTS = [
-												'Major delays',
-												'Dirty trains',
-												'Train too packed',
-												'Not enough services',
-												'Other'
-											]
+						'Major delays',
+						'Dirty trains',
+						'Train too packed',
+						'Not enough services',
+						'Other'
+						]
 
   validates_presence_of :comment, :line, :station
+
+
+  scope :latest, -> { order("created_at DESC") }
+
 
 end
 

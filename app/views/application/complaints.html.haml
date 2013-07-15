@@ -1,3 +1,23 @@
-%h2 Complaints
+%div.grid.flex
 
-= @feedbacks.inspect
+  %h3 Complaints
+
+
+
+  %table
+    %thead
+      %th Feedback Date
+      %th Comment
+      %th Topic
+      %th Line
+      %th Station
+    %tbody
+      - Feedback.latest.each do |feedback|
+        %tr
+          %td=l feedback.created_at, :format => :short_datetime
+          %td= feedback.comment
+          %td= feedback.topic
+          %td= feedback.line
+          %td= feedback.station
+
+/.strftime('%H:%M:%S')

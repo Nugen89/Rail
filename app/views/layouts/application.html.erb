@@ -13,6 +13,7 @@
 			<ul class="menu">
 				<!-- <li><div id="logo"><%= link_to "CityFail", root_path %></div></li> -->
 				<li class="current"><%= link_to "Home", root_path %> </li>
+        <li><%= link_to "Status" %></li>
 				<li><%= link_to "Complaints", complaints_path %> </li>
 				<li><%= link_to "About", about_path %></li>
 			</ul>
@@ -22,8 +23,8 @@
 	<%= yield %>
 
 	<footer class="grid flex small">
-	CityRail Fail is not affiliated with Sydney Trains. CityRail Fail endeavours to provide the commuters with 
-	We will forward your feedback to Sydney Trains as requested.
+	CityRail Fail is not affiliated with Sydney Trains. CityRail Fail was created to provide commuters with easy way to submit feedback to Sydney Trains.
+  <%= link_to "Learn more", about_path %>
 	</footer>
 
 	<% if Rails.env.development? %>

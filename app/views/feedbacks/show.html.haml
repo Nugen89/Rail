@@ -1,3 +1,13 @@
-%h3 SHow
+%div.grid.flex
 
-= @feedback.inspect
+  %h4 Thanks for using CityFail
+
+  %p Your feedback is being sent to CityRail to let them know your frustrations. By providing valuable feedback hopefully we will obtain a better quality of service that meets your needs.
+
+  %p= @feedback.comment
+  %p= @feedback.topic
+  %p= @feedback.line
+  %p= @feedback.station
+  %p= @feedback.created_at
+
+  / = @feedback.inspect
